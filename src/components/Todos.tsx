@@ -8,7 +8,7 @@ const Todos = (props: TodoList) => {
   return (
       <ul className={classes.todos}>
         {props.items.map((item: Todo) => (
-            <TodoItem todo={item}/>
+            <TodoItem todo={item} onRemoveTodo={props.onRemoveTodo}/>
         ))}
       </ul>
   );

@@ -5,12 +5,13 @@ export interface Todo {
 
 export interface TodoList {
   items: Todo[];
+  onRemoveTodo: (id: string) => void;
 }
 
 export interface TodoItemProps {
   todo: Todo;
   // onToggle: (id: string) => void;
-  // onRemove: (id: string) => void;
+  onRemoveTodo: (id: string) => void;
 }
 
 export interface NewTodoProps {
