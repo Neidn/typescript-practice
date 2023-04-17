@@ -17,3 +17,9 @@ export interface TodoItemProps {
 export interface NewTodoProps {
   onAddTodo: (text: string) => void;
 }
+
+export interface TodosContextObj {
+  items: Todo[];
+  onAddTodo: (text: string) => void;
+  onRemoveTodo: (id: string) => void;
+}
